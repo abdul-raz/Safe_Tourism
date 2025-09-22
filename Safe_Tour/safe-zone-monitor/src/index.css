@@ -1,0 +1,124 @@
+/* index.css - Police Dashboard Optimized */
+
+:root {
+  font-family: 'Roboto', system-ui, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  
+  /* Light theme for professional police dashboard */
+  color-scheme: light;
+  color: #333333;
+  background-color: #f5f5f5;
+  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove the centering - let React app control layout */
+body {
+  margin: 0;
+  background-color: #f5f5f5;
+  min-width: 320px;
+  min-height: 100vh;
+  /* Removed: display: flex; place-items: center; */
+}
+
+/* Links for police blue theme */
+a {
+  font-weight: 500;
+  color: #1976d2; /* Material-UI primary blue */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #115293; /* Darker blue */
+  text-decoration: underline;
+}
+
+/* Typography for professional look */
+h1, h2, h3, h4, h5, h6 {
+  color: #1a237e; /* Dark navy for headers */
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+}
+
+h1 {
+  font-size: 2.5em;
+  line-height: 1.2;
+}
+
+/* Don't override MUI buttons - let MUI handle styling */
+/* Removed button styling to avoid conflicts */
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #bdbdbd;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #999999;
+}
+
+/* Utility classes */
+.text-bold {
+  font-weight: 700;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.no-select {
+  -webkit-user-select: none; /* Safari */
+  user-select: none;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* Optional: Dark mode support (commented out for police dashboard) */
+/*
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #ffffff;
+    background-color: #242424;
+  }
+  
+  body {
+    background-color: #242424;
+  }
+  
+  a:hover {
+    color: #64b5f6;
+  }
+}
+*/
